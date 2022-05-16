@@ -23,14 +23,33 @@
     <div *ngIf="firstName.errors.pattern">
     FirstName does not match pattern
   </div>
-
-  </div>
-  </div>
+</div>
   <br/><br/>
   <div class="form-group">
        <label for="comment">Comment</label>
-       <textarea ngModel="comment" id="comment" cols="10" rows="10" class="form-control"></textarea>
+       <textarea id="comment" cols="10" rows="10" class="form-control"></textarea>
   </div>
   <br/>
   <button class="btn btn-primary">Submit</button>
-</form>
+  <br/>
+   <h2>checkbox example</h2>
+  <div class="form-check form-group">
+    <input class="form-check-input" type="checkbox" id="notification" name="notification">
+     <label class="form-check-label" for="notification">Notofication </label>
+     </div>
+  <div class="form-check form-group">
+      <input class="form-check-input" type="checkbox" id="alerts" name="notification">
+      <label class="form-check-label" for="alert">Alert</label>
+  </div>
+  <button class="btn btn-primary">ok</button>
+
+<h2>radio button example</h2>
+<p>Gender</p>
+<div class="form-group">
+ <div class="form-check">
+   <input type="text" class="form-check-input" type="radio" name="gender" id="gender" value="male" checked>
+   <label for="gender" class="form-check-label">Male</label>
+</div>
+</div>
+
+
